@@ -1,10 +1,7 @@
 # Sentence Processing with Pushdown Automata
 
-**UCLA LING 185A — Computational Linguistics | Winter 2025**  
 **Author:** Willie (Chun Wei) Wen  
 **Language:** Haskell
-
-## Overview
 
 How can a formal grammar represent the structure of a sentence, and what can different parsing strategies tell us about the computational demands of language processing?
 
@@ -16,7 +13,6 @@ This course project investigates those questions by implementing **pushdown auto
 
 Written in Haskell, the implementation supports stack transitions, verification of transition sequences, recursive recognition (including ε-transitions), configurable stack restrictions, and comparison of parsing paths. The accompanying eight-page paper uses these implementations to discuss **syntactic ambiguity, left/right/center embedding, stack depth, and the limitations of formal grammars as models of human sentence processing**.
 
-> **Scope:** This is a formal-language implementation and theoretical computational-linguistics project, **not** a trained NLP model or an empirical experiment measuring human reading time, neural responses, or cognitive load.
 
 ## Repository contents
 
@@ -26,8 +22,6 @@ sentence-processing-pda/
 ├── NLP_Project_Paper_WILLIE.pdf   # Eight-page final paper and analysis
 └── README.md                      # Documentation and usage examples
 ```
-
-`PDA.hs` includes **course-provided starter definitions and demonstration grammars above the marked divider**. The transition, recognition, and CFG-to-PDA conversion functions **below** that divider are my project implementations.
 
 ## Requirements and setup
 
@@ -293,16 +287,7 @@ The project paper discusses the implications of these strategies for **left-, ri
 - **Simplified language coverage.** `cfg_eng` is a small hand-specified grammar, not a broad-coverage English parser.
 - **Interpretive scope.** Discussion of memory limitations, ambiguity, and garden-path effects in the accompanying paper is **theoretical**; no behavioral or neuroscience experiments were conducted for this project.
 
-## Potential extensions
-
-1. Detect repeated parser configurations or use memoization to avoid unproductive loops.
-2. Construct parse trees from successful transition sequences.
-3. Compare peak stack depth and search cost systematically across embedding types and sentence lengths.
-4. Distinguish guaranteed-complete recognition from search with heuristic pruning.
-5. Evaluate parsing predictions against behavioral data (e.g., reading times or comprehension accuracy), rather than treating stack size alone as a cognitive explanation.
 
 ## Paper and attribution
 
 **Willie (Chun Wei) Wen.** *Final Project: Pushdown Automata and Sentence-Processing.* UCLA LING 185A, Winter 2025. See [`NLP_Project_Paper_WILLIE.pdf`](NLP_Project_Paper_WILLIE.pdf) for the full implementation discussion, structural analyses, and reflection.
-
-**Course context:** Project instructions and the original PDA/CFG starter framework were provided by **Tim Hunter**, UCLA LING 185A (Winter 2025). The marked implementation section of `PDA.hs` contains my solutions to the project tasks. Examples and terminology in this README are aligned with that assignment and the accompanying paper.
