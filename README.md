@@ -8,7 +8,7 @@ This project explores how different parsing strategies for context-free grammars
 - Implements three CFG-based parsers in Haskell
 - Analyzes stack behavior on embedded sentences
 - Links parsing difficulty to garden-path effects and human limitations
-- 
+  
 ## Files
 
 - `Final Project.pdf`: Final paper describing methods and results
